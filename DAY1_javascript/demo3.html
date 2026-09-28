@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <button class="quantity" onClick="document.getElementById('paragraph').innerHTML='these are your card items='+cartquantity">Show </button>
+    <button onClick="cartquantity=cartquantity+1">Add to cart</button>
+    <button onClick="cartquantity=cartquantity+2">+2</button>
+    <button onClick="cartquantity=cartquantity+3">+3</button>
+    <button onClick="cartquantity=0">Clear cart</button>
+    <p id="paragraph"></p>
+    <script>
+       let cartquantity=0;
+    </script>
+    
+</body>
+</html>

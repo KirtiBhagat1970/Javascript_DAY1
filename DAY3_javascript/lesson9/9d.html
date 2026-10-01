@@ -6,8 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="text">
-    <button onclick="document.querySelector('.name').innerHTML='your name is :${text}'">Submit</button>
+    <input type="text" placeholder="name" class=".text">
+    <button onclick="
+    const inputtext=document.querySelector('.name');
+    document.querySelector('.text').innerHTML=`your name is :${inputtext.value}`;">Submit</button>
     <p class="name"></p>
     
 </body>

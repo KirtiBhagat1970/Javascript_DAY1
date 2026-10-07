@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Advanced function</title>
+    </head>
+    <body>
+        <button class="btn" onclick="
+            update();
+            ">Start
+        </button>
+        <script>
+            function update()
+            {
+                const button=document.querySelector(".btn");
+                setTimeout(function(){
+                    button.innerHTML='finished';
+
+                },1000);
+            }
+        </script>
+    </body>
+</html>

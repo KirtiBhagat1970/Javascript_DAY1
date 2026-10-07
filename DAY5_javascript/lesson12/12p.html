@@ -12,8 +12,7 @@
             function update()
             {
                 const button=document.querySelector(".btn");
-                button.innerHTML='Loading';
-                setTimeout(function(){
+                setTimeout(()=>{
                     button.innerHTML='finished';
 
                 },1000);

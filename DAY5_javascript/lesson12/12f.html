@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Advanced function</title>
+    </head>
+    <body>
+        <button class="btn" onclick="
+            display();
+            ">Add to cart
+        </button>
+        <p class="msg"></p>
+        <script>
+            function display()
+            {
+                let timeoutid;
+                const message=document.querySelector(".msg");
+                message.innerHTML='Added';
+                clearTimeout(timeoutid);
+                timeoutis=setTimeout(function(){
+                    message.innerHTML='';
+
+                },2000);
+            }
+        </script>
+    </body>
+</html>

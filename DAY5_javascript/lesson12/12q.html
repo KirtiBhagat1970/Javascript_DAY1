@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <button class="btn">
+            Start
+        </button>
+        <script>
+            document.querySelector('.btn').addEventListener('click',()=>{
+                const button=document.querySelector('.btn');
+                
+                setTimeout(()=>{
+                    button.innerHTML='finished';
+
+                },1000);
+            });
+            
+        </script>
+    </body>
+</html>
